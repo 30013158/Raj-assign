@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Name - Rajveer Kaur
+//Task-1: Creating a login system
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +15,8 @@ namespace Rajveer_Assignment
             Console.WriteLine("**************Welcome to our new Login system**************");
             Console.Write("Please enter your username: ");
             string userName = Console.ReadLine();
-            Console.WriteLine(ValidateUsername(userName));
-            Console.WriteLine();
+            Console.WriteLine(ValidateUsername(userName));//Calling the ValidateUsername method
+           Console.WriteLine();
             
             Console.Write("Please enter the password: ");
             string passWord1 = Console.ReadLine();
@@ -23,6 +25,8 @@ namespace Rajveer_Assignment
             Console.WriteLine(ValidatePassword(passWord1, passWord2));
             Console.ReadLine();
 
+            Console.WriteLine("Welldone");
+
         }
         static string ValidateUsername(string userName)
         {
@@ -30,7 +34,7 @@ namespace Rajveer_Assignment
             if (userName.Length == 8)
             { result = "A valid Username"; }
             else
-            { result = "Username is not valid. It must include 8 characters"; }
+            {  result = "Username is not valid. It must include 8 characters";}
             return result;
         }
 
@@ -44,7 +48,7 @@ namespace Rajveer_Assignment
                 { result2 = "Error! your passwords don't match"; }
             }
             else
-            { result2 = "Aww ! Your password must include 8 characters"; }
+            { result2 = "Oops! Your password must include 8 characters"; }
             return result2;
         }
     }
