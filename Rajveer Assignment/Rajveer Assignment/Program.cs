@@ -13,23 +13,10 @@ namespace Rajveer_Assignment
         static void Main(string[] args)
         {
 
-<<<<<<< HEAD
+
             Console.WriteLine("**************Welcome to our new Login system**************");
             string result2 = "";
-            string response = "";
-
-           do
-            {
-                Console.Write("Please enter your username: ");
-                string userName = Console.ReadLine();
-                Console.WriteLine(ValidateUsername(userName));//Calling the ValidateUsername method
-                response = ValidateUsername(userName);
-                Console.WriteLine();
-            } while (response != " Invalid username!");
-=======
-            Console.WriteLine("**************  Welcome to our new Login system  **************");
-
-            //initialising result outside of loops
+             //initialising result outside of loops
             string result = "";
 
 
@@ -41,7 +28,7 @@ namespace Rajveer_Assignment
                 result = ValidateUsername(userName);//Calling the ValidateUsername method
                 Console.WriteLine();
             } while (result != "** A valid Username ! **");
->>>>>>> d459460c54f08ec4572284c0b834ceecb4048ad6
+
             do
             { Console.Write("Please enter the password: ");
                 string passWord1 = Console.ReadLine();
@@ -51,16 +38,12 @@ namespace Rajveer_Assignment
 
                 result2 = ValidatePassword(passWord1, passWord2);
                 Console.WriteLine();
-
-<<<<<<< HEAD
-            } while (result2 != "Password accepted !");//check
-=======
-            } while (result != "** Password accepted ! **");//check
+            }  while (result2 != "** Password accepted ! **");//check
 
 
             //Displaying a message for setting username and password
             Console.WriteLine("Congratulations! Your username and password have been accepted and set.");
->>>>>>> d459460c54f08ec4572284c0b834ceecb4048ad6
+
             Console.ReadLine();
 
             
@@ -80,7 +63,7 @@ namespace Rajveer_Assignment
 
         /*Validate password method checks the length of password and also checks if both the passwords are
         same and if all the criteria is correct a message is sent of passwords acceptance otherwise an error message.*/
-        static string ValidatePassword(string passWord1, string passWord2)
+       static string ValidatePassword(string passWord1, string passWord2)
         { string result2;
             if (passWord1.Length >= 8 )//look at
             {
@@ -89,9 +72,7 @@ namespace Rajveer_Assignment
                 else
                 { result2 = "Error! your passwords don't match"; }
             }
-            
-   
-            else
+             else
             { result2 = "Oops! Your password must include 8 characters"; }
             return result2;
         }
