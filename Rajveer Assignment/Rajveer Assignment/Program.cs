@@ -22,12 +22,12 @@ namespace Rajveer_Assignment
 
             do
             {
-                Console.Write("Please enter your username: ");
+                Console.Write("Please enter your username (atleast 8 characters): ");
                 string userName = Console.ReadLine();
                 Console.WriteLine(ValidateUsername(userName));
                 result = ValidateUsername(userName);//Calling the ValidateUsername method
                 Console.WriteLine();
-            } while (result != "** A valid Username ! **");
+            } while (result != " A valid Username! ");
 
             do
             { Console.Write("Please enter the password: ");
@@ -55,9 +55,9 @@ namespace Rajveer_Assignment
         {
             string result;
             if (userName.Length >= 8)
-            { result = "** A valid Username ! **"; }
+            { result = " A valid Username! "; }
             else
-            {  result = "Invalid username! It must include atleast 8 characters.";}
+            {  result = "Invalid username! ";}
             return result;
         }
 
