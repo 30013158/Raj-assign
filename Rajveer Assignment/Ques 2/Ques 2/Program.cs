@@ -13,6 +13,9 @@ namespace Ques_2
         static void Main(string[] args)
         {
             Console.WriteLine("********************Welcome to Holiday Park's new Payroll system********************");
+
+            Console.WriteLine();
+
             Employee E1 = new Employee();//creating an employee object
             Console.Write("Please enter your full name: ");
             E1.Name = Console.ReadLine();

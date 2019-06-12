@@ -15,7 +15,6 @@ namespace Ques3
             //Random numbers
             Random rand = new Random();
 
-           
             //initialising Matrix A's array using random numbers and using nested for loop
             int[,] matrixA = new int[3, 3];
             
@@ -24,30 +23,27 @@ namespace Ques3
                 for(int j=0; j < matrixA.GetLength(1); j++)
                 { matrixA[i, j] = rand.Next(-10, 10); }
             }
+            
             //displaying Matrix A
             Console.WriteLine("Matrix A: ");
             Display(matrixA);
 
             Console.WriteLine();
 
-
-
-            ////initialising Matrix A's array using random numbers and using nested for loop
+            //initialising Matrix A's array using random numbers and using nested for loop
             int[,] matrixB = new int[3, 3];
 
             for (int i = 0; i < matrixB.GetLength(0); i++)
             {
                 for (int j = 0; j < matrixB.GetLength(1); j++)
                 { matrixB[i, j] = rand.Next(-10, 10); }
-
             }
+            
             //displaying Matrix B
             Console.WriteLine("Matrix B: ");
             Display(matrixB);
 
             Console.WriteLine();
-
-
 
             //matrix C = matrix A = matrix B
 
@@ -60,10 +56,7 @@ namespace Ques3
             Console.WriteLine("Matrix C = Matrix A + Matrix B ");
             Display(matrixC);
 
-
-
             Console.ReadLine();
-            
         }
        
         //a method for displaying the arrays
@@ -72,7 +65,7 @@ namespace Ques3
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
-                    Console.Write(arr[i, j] + " ");
+                Console.Write(arr[i, j] + " ");
 
                 Console.WriteLine();
             }
